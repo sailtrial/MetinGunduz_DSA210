@@ -20,7 +20,7 @@ In daily life, people are exposed to dozens or even hundreds of notifications, c
 
 - **Notification Data**: To be collected using iPhone's Screen Time feature, aggregated on a daily basis.
 - **Go/No-Go Test Data**: The task will be conducted using online tools such as PsyToolkit, Gorilla, or similar browser-based platforms that are compatible with Windows.
-- **Additional Variables**: Self-reported mood score (1–5)
+- **Additional Variables**: Self-reported mood score (1–5), Caffeine (mg)
 
 ## Planned Methodology
 
