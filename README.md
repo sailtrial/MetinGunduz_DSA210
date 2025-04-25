@@ -1,134 +1,66 @@
-# Project Description
+# Go/No-Go Test Error Rate vs. Daily Notification Load
 
-For the next three months, I will systematically track and analyze how my daily habits (particularly smoking, a balanced macronutrient diet, and irregular sleep patterns) affect my testosterone levels.
+## Project Overview
+This project investigates whether the number of daily smartphone notifications affects cognitive control, specifically in the context of response inhibition measured through the Go/No-Go task. The main objective is to explore if higher notification load leads to a higher error rate and slower reaction times, indicating reduced inhibitory control.
 
-Unlike my fellow participant, who follows a high-protein diet, regular exercise, and a structured sleep schedule, my routine includes:
+## Motivation
+In daily life, people are exposed to dozens or even hundreds of notifications, causing frequent task-switching and distractions. This study is motivated by the hypothesis that such interruptions could negatively impact cognitive functions like focus and self-control. The Go/No-Go test is used as a standardized tool to measure these effects.
 
-- A balanced diet with a mix of protein, fats, and carbohydrates
-- Maintaining current body weight instead of weight loss
-- Regular smoking
-- Irregular sleep patterns
+## Objectives & Hypotheses
 
-By comparing my final results with my fellow participant's, I aim to identify how these different lifestyle choices impact testosterone levels and overall health.
+- To analyze the relationship between daily notification count and Go/No-Go task performance.
+- To investigate whether higher notification loads are linked to increased error rates or slower reaction times.
+- To explore whether there are any delayed effects (e.g., yesterday's notifications affecting today's performance).
 
----
-
-## Objectives
-
-### Evaluate the Effect of Balanced Nutrition on Testosterone
-- Determine how a balanced macronutrient diet influences testosterone production compared to a high-protein diet.
-
-### Analyze the Relationship Between Smoking and Hormone Levels
-- Assess the potential impact of regular smoking on testosterone levels and compare it with a non-smoker's results.
-
-### Assess the Effect of Irregular Sleep Patterns
-- Examine whether sleep inconsistency contributes to hormonal imbalances.
-
-### Compare My Results with My Fellow Participant’s
-- Evaluate how different lifestyle factors (smoking, nutrition, and sleep) influence testosterone levels and overall health.
-
-### Use Data Analysis to Identify Trends and Insights
-- Apply statistical methods to uncover patterns in hormonal fluctuations.
-
----
+### Hypotheses
+- H₀: Notification count has no significant effect on commission error rate.
+- H₁: Higher notification count is associated with increased commission error rate.
 
 ## Dataset Description
 
-I will collect daily lifestyle habit data and measure bi-weekly testosterone levels through blood tests.
+- **Notification Data**: To be collected using iPhone's Screen Time feature, aggregated on a daily basis.
+- **Go/No-Go Test Data**: The task will be conducted using online tools such as PsyToolkit, Gorilla, or similar browser-based platforms that are compatible with Windows.
+- **Additional Variables**: Daily caffeine intake (mg), and self-reported mood score (1–5). Sleep data will not be included.
 
-### Daily Collected Data:
-- **Total Calories Consumed** (kcal)
-- **Macronutrient Breakdown**: Protein (g), Fat (g), Carbohydrates (g)
-- **Exercise Data**: Whether I exercised or not, and the type of workout performed
-- **Alcohol Consumption** (Yes/No)
-- **Water Intake** (Liters per day)
-- **Sleep Duration** (Hours per night)
-- **Number of Cigarettes Smoked** (per day)
+## Planned Methodology
 
-### Bi-Weekly Blood Test Measurements:
-- **Testosterone Levels** (ng/dL)
+1. Daily logging of notification counts and test performance over 45 days
+2. Data preprocessing, merging, and basic validation
+3. Exploratory Data Analysis (EDA): distribution, trends, and correlations
+4. Statistical analysis:
+   - Correlation coefficients (Pearson, Spearman)
+   - Linear and multiple regression models
+   - Optional lag analysis (e.g., day t vs. day t+1)
+   - Optional binary classification (e.g., high vs. low error days)
 
-### Comparative Factor:
-My results will be compared to my fellow participant's, who follows a high-protein diet, does not smoke, and maintains a structured sleep schedule.
+## Next Steps
 
----
+- Set up data collection templates and scripts
+- Start daily task tracking and logging
+- Begin exploratory analysis after 1–2 weeks of data
+- Progressively refine models with feedback and insights
 
-## Hypothesis
+## Tools and Environment
 
-- **H₀ (Null Hypothesis):** My daily habits do not significantly influence testosterone levels.
-- **H₁ (Alternative Hypothesis):** My balanced diet, smoking, and irregular sleep patterns significantly influence testosterone levels over time.
+Data will be processed using Python and browser-based Go/No-Go tools
 
-### Expected Outcomes:
-- My testosterone levels may fluctuate more compared to my fellow participant's due to irregular sleep patterns.
-- Smoking might have a suppressing effect on testosterone production.
-- A balanced diet may lead to stable but lower testosterone compared to a high-protein diet.
-- Cholesterol levels and liver function markers may show noticeable differences due to smoking and dietary variations.
+Analysis and visualization tools may include:
+- pandas
+- matplotlib
+- seaborn
+- scikit-learn
+- scipy
 
----
+Some of the workflow will be developed collaboratively with the assistance of ChatGPT, especially for data cleaning, statistical modeling, and report writing
 
-## Methodology
+All code, documentation, and results will be organized and published via a GitHub repository
 
-### 1. Data Collection
-- I will log all nutritional intake, smoking habits, and sleep patterns daily.
-- Bi-weekly blood tests will provide testosterone and other health marker readings.
+## Repository Structure (planned)
 
-### 2. Data Processing
-- Convert all raw data into structured formats.
-- Handle outliers or anomalies (e.g., extreme fatigue, sickness).
-
-### 3. Exploratory Data Analysis (EDA)
-- Generate time-series graphs to visualize testosterone trends.
-- Use correlation heatmaps to identify key relationships between habits and hormonal levels.
-
-### 4. Hypothesis Testing
-- Perform paired t-tests to check whether smoking, diet, and sleep irregularities impact testosterone levels.
-- Use regression models to identify the most influential lifestyle factors.
-
-### 5. Comparative Analysis
-- Compare my testosterone levels, cholesterol profile, and electrolyte balance with my fellow participant’s.
-- Analyze how smoking, balanced nutrition, and irregular sleep impact testosterone differently compared to structured lifestyle choices.
-- Generate visual comparisons between our datasets to highlight major trends.
-
----
-
-## Visualization Plan
-
-- **Line Graphs** → Track testosterone fluctuations over time.
-- **Scatter Plots** → Identify correlations between testosterone levels and different habits.
-- **Heatmaps** → Analyze the relationships between various biomarkers.
-- **Bar Charts** → Compare testosterone levels across different habit groups (sleep, smoking, diet, etc.).
-- **Side-by-Side Comparisons** → Evaluate key differences between my results and my fellow participant's.
-
----
-
-## Tools & Technologies
-
-I will use the following tools for data collection and analysis:
-
-- **Microsoft Excel / Google Sheets** → Logging daily habits and blood test results.
-- **Python (Pandas, Matplotlib, Seaborn, SciPy)** → Data analysis and visualization.
-- **Statistical Tests (t-tests, Regression Models)** → Hypothesis validation.
-
----
-
-## Final Deliverables
-
-By the end of the project, I will produce:
-
-📌 A detailed report summarizing my findings, statistical insights, and conclusions.
-
-📌 Data visualizations illustrating testosterone trends and how they relate to my lifestyle habits.
-
-📌 A comparative analysis of my habits and blood test results vs. my fellow participant’s.
-
-📌 Key takeaways and recommendations regarding the effects of different lifestyle habits on testosterone.
-
----
-
-## Conclusion
-
-Through this project, I aim to quantify the impact of smoking, balanced nutrition, and irregular sleep on testosterone levels. By systematically tracking my habits and comparing my results with a non-smoker who follows a structured routine, I hope to determine which lifestyle choices positively or negatively influence hormonal health.
-
-At the end of the study, I will compare my results with my fellow participant’s to analyze the impact of smoking, nutrition, and sleep patterns on testosterone levels. This comparative analysis will provide a clearer picture of how different lifestyle habits shape hormonal health over time.
-
-This study will not only help me optimize my own testosterone levels but could also offer valuable insights for others interested in the effects of daily habits on hormone regulation.
+- `notifications_collector.py` – organizes and structures Screen Time logs
+- `gonogo_results.csv` – test results collected daily
+- `merged_data.csv` – final combined dataset
+- `eda_notebook.ipynb` – visualization and exploration
+- `modeling.ipynb` – regression and classification models
+- `README.md` – project documentation
+- `requirements.txt` – dependency list
