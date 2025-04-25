@@ -55,10 +55,8 @@ All code, documentation, and results will be organized and published via a GitHu
 
 ## Repository Structure (planned)
 
-- `notifications_collector.py` – organizes and structures Screen Time logs
-- `gonogo_results.csv` – test results collected daily
-- `merged_data.csv` – final combined dataset
-- `eda_notebook.ipynb` – visualization and exploration
+- `data` folder – processed CSV files (e.g., combined_data.csv)
+- `notebooks`: data_process.ipynb(data conversion & merging) ,data_visualization.ipynb(EDA, visualization & hypothesis testing)
 - `modeling.ipynb` – regression and classification models
 - `README.md` – project documentation
 - `requirements.txt` – dependency list
