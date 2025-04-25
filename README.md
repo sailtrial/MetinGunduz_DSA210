@@ -50,9 +50,7 @@ Analysis and visualization tools may include:
 - seaborn
 - scikit-learn
 - scipy
-
-Some of the workflow will be developed collaboratively with the assistance of ChatGPT, especially for data cleaning, statistical modeling, and report writing
-
+Some of the workflow will be developed collaboratively with the assistance of ChatGPT
 All code, documentation, and results will be organized and published via a GitHub repository
 
 ## Repository Structure (planned)
