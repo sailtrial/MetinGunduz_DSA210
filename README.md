@@ -53,7 +53,7 @@ Analysis and visualization tools may include:
 Some of the workflow will be developed collaboratively with the assistance of ChatGPT
 All code, documentation, and results will be organized and published via a GitHub repository
 
-## Repository Structure (planned)
+## Repository Structure
 
 - `data` folder – processed CSV files (e.g., combined_data.csv)
 - `notebooks`: data_process.ipynb(data conversion & merging) ,data_visualization.ipynb(EDA, visualization & hypothesis testing)
